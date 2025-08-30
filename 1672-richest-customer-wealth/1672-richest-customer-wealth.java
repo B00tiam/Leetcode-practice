@@ -6,9 +6,7 @@ class Solution {
             for (int j = 0; j < accounts[i].length; j++) {
                 wealth += accounts[i][j];
             }
-            if (wealth > max_wealth) {
-                max_wealth = wealth;
-            }
+            max_wealth = Math.max(max_wealth, wealth);
         }
         return max_wealth;
     }
